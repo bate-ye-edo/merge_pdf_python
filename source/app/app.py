@@ -2,27 +2,28 @@ from tkinter import *
 from tkinter import filedialog
 from tkinter import messagebox as mbox
 from merge import mergePDF
+
 class AppendGUI:
     def __init__(self):
         self.filenames=[]
         self.root = Tk()
         self.root.title("Append PDF")
-        self.root.geometry('400x200')
+        self.root.geometry('600x200')
         self.root.resizable(True,True)
         self.f = Frame()
         self.f.pack()
 
         self.labeltext = ""
         self.names = Label(self.f,text=self.labeltext)
-        self.names.grid(row=1,column=2,columnspan=2)
+        self.names.grid(row=1,column=2)
 
 
-        self.outputFileEntry = Button(self.f,cursor='hand1',text="Merge PDFs",command=lambda:self.saveButtonClicked())
+        self.outputFileEntry = Button(self.f,cursor='hand1',text="Merge PDFs",command=lambda:self.saveButtonClicked(),width=20)
         self.outputFileEntry.grid(row=2,column=2,columnspan=2)
 
         self.outputRow = 1
 
-        self.openButton = Button(self.f,cursor='hand1',text="openFile",command=lambda:self.openButtonClicked())
+        self.openButton = Button(self.f,cursor='hand1',text="openFile",command=lambda:self.openButtonClicked(),width=20)
         self.openButton.grid(row=0,column=2,columnspan=2)
 
         self.root.mainloop()
