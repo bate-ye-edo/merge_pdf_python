@@ -1,4 +1,5 @@
 #Created by Bate Ye
+#GNU GENERAL PUBLIC LICENSE
 from tkinter import *
 from tkinter import filedialog
 from tkinter import messagebox as mbox
