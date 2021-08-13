@@ -27,3 +27,5 @@ def mergePDF(filenames,outputFileName):
     for file in openedFiles:
         file.close()
     return True
+
+#TO DO
