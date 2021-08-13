@@ -1,6 +1,7 @@
 #Created by Bate Ye
 #GNU GENERAL PUBLIC LICENSE
 #09/02/2021
+
 from tkinter import *
 from tkinter import filedialog
 from tkinter import messagebox as mbox
@@ -30,6 +31,7 @@ class AppendGUI:
         self.openButton.grid(row=0,column=2,columnspan=2)
 
         self.root.mainloop()
+        
     def openButtonClicked(self):
         self.root.filename = filedialog.askopenfilename(initialdir="/",title="Select PDFs",filetypes=[("PDF files","*.pdf")])
         if self.root.filename != "":
